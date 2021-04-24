@@ -2,10 +2,10 @@
 - hosts: dev
   remote_user: ec2-user
 - name: Install Oracle Java 8
-    become: yes
-    yum: 
-      name: ['java-1.8.0-openjdk'] 
-      state: latest
+  become: yes
+  yum: 
+    name: ['java-1.8.0-openjdk'] 
+    state: latest
   
   - name: "Copy jar application"
     copy:
