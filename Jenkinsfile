@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo '> Deploying the application ...'
                 ansiblePlaybook(
-                    credentialsId: 'dev',
+                    credentialsId: 'fiap-ci-cd',
                     inventory: 'hosts.ini',
                     playbook: 'playbook-install.yaml',
                     disableHostKeyChecking: true
